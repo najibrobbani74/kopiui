@@ -1,0 +1,213 @@
+1:"$Sreact.fragment"
+2:I[5244,[],""]
+3:I[3866,[],""]
+4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"StaticNavbar"]
+5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarHeader"]
+6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SidebarTriggerButton"]
+7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],""]
+8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarMenus"]
+9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarMenu"]
+a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarLink"]
+b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SearchModalTrigger"]
+c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SearchModal"]
+d:I[1166,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"default"]
+e:I[811,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"default"]
+f:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialog"]
+10:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogTrigger"]
+11:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogContent"]
+12:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogHeader"]
+13:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogTitle"]
+14:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogDescription"]
+15:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogFooter"]
+16:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogCancel"]
+17:I[9077,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"AlertDialogAction"]
+18:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"Tabs"]
+19:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"TabsList"]
+1a:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"TabsTrigger"]
+1b:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"TabsContent"]
+1c:I[9389,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","311","static/chunks/app/docs/components/alert-dialog/page-a4248d5fab00e670.js"],"default"]
+1f:I[6213,[],"OutletBoundary"]
+21:I[6213,[],"MetadataBoundary"]
+23:I[6213,[],"ViewportBoundary"]
+25:I[4835,[],""]
+:HL["/_next/static/media/569ce4b8f30dc480-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/f3d2d091ae8dd5fd.css","style"]
+1d:T44f,import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, } from "@/components/ui/alert-dialog/AlertDialog";
+
+const AlertDialogPreview = () => {
+    return (
+        <AlertDialog>
+            <AlertDialogTrigger>Open Dialog</AlertDialogTrigger>
+            <AlertDialogContent>
+                <AlertDialogHeader>
+                    <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                        This action cannot be undone. This will permanently delete your account
+                        and remove your data from our servers.
+                    </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction>Continue</AlertDialogAction>
+                </AlertDialogFooter>
+            </AlertDialogContent>
+        </AlertDialog>
+    );
+};
+
+export default AlertDialogPreview;1e:T13e0,"use client" // Directive to indicate that this file is a client-side component if using NextJs.
+
+import { createContext, forwardRef, HTMLProps, useContext, useState, ReactNode, FC } from 'react';
+import { cn } from '@/lib/utils';
+
+// Context to manage dialog open/close state
+const AlertDialogContext = createContext<{
+    isOpen: boolean;
+    setIsOpen: (open: boolean) => void;
+} | null>(null);
+
+// Provider component to manage dialog state
+const AlertDialogProvider: FC<{ children: ReactNode }> = ({ children }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <AlertDialogContext.Provider value={{ isOpen, setIsOpen }}>
+            {children}
+        </AlertDialogContext.Provider>
+    );
+};
+
+// Main AlertDialog component with state management
+const AlertDialog = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, ...props }, ref) => {
+    return (
+        <AlertDialogProvider>
+            <div ref={ref} {...props}>
+                {children}
+            </div>
+        </AlertDialogProvider>
+    );
+});
+
+// Trigger button to open the dialog
+const AlertDialogTrigger = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, onClick, className = "", ...props }, ref) => {
+    const context = useContext(AlertDialogContext);
+    if (!context) throw new Error('AlertDialogTrigger must be used within AlertDialog');
+    
+    return (
+        <div
+            ref={ref}
+            className={cn("px-4 py-2 rounded", className)}
+            onClick={(e) => {
+                context.setIsOpen(true);
+                onClick?.(e);
+            }}
+            {...props}
+        >
+            {children}
+        </div>
+    );
+});
+
+// Content wrapper for the dialog
+const AlertDialogContent = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => {
+    const context = useContext(AlertDialogContext);
+    if (!context) throw new Error('AlertDialogContent must be used within AlertDialog');
+    
+    if (!context.isOpen) return null;
+    
+    return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="fixed inset-0 bg-black/50" />
+            <div
+                ref={ref}
+                className={cn("relative bg-white rounded-lg shadow-lg p-6 max-w-md w-full mx-4", className)}
+                {...props}
+            >
+                {children}
+            </div>
+        </div>
+    );
+});
+
+// Header section of the dialog
+const AlertDialogHeader = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => (
+    <div ref={ref} className={cn("mb-4", className)} {...props}>
+        {children}
+    </div>
+));
+
+// Title component
+const AlertDialogTitle = forwardRef<HTMLHeadingElement, HTMLProps<HTMLHeadingElement>>(({ children, className = "", ...props }, ref) => (
+    <h2 ref={ref} className={cn("text-lg font-semibold", className)} {...props}>
+        {children}
+    </h2>
+));
+
+// Description component
+const AlertDialogDescription = forwardRef<HTMLParagraphElement, HTMLProps<HTMLParagraphElement>>(({ children, className = "", ...props }, ref) => (
+    <p ref={ref} className={cn("text-sm text-gray-600", className)} {...props}>
+        {children}
+    </p>
+));
+
+// Footer section of the dialog
+const AlertDialogFooter = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => (
+    <div ref={ref} className={cn("mt-6 flex justify-end space-x-2", className)} {...props}>
+        {children}
+    </div>
+));
+
+// Cancel button
+const AlertDialogCancel = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, onClick, className = "", ...props }, ref) => {
+    const context = useContext(AlertDialogContext);
+    if (!context) throw new Error('AlertDialogCancel must be used within AlertDialog');
+    
+    return (
+        <div
+            ref={ref}
+            className={cn("px-4 py-2 text-gray-700 bg-gray-100 rounded hover:bg-gray-200", className)}
+            onClick={(e) => {
+                context.setIsOpen(false);
+                onClick?.(e);
+            }}
+            {...props}
+        >
+            {children}
+        </div>
+    );
+});
+
+// Action button
+const AlertDialogAction = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, onClick, className = "", ...props }, ref) => {
+    const context = useContext(AlertDialogContext);
+    if (!context) throw new Error('AlertDialogAction must be used within AlertDialog');
+    
+    return (
+        <div
+            ref={ref}
+            className={cn("px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700", className)}
+            onClick={(e) => {
+                context.setIsOpen(false);
+                onClick?.(e);
+            }}
+            {...props}
+        >
+            {children}
+        </div>
+    );
+});
+
+export {
+    AlertDialog,
+    AlertDialogTrigger,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogAction,
+    AlertDialogCancel,
+};0:{"P":null,"b":"jsR5kjarPPsVILCsioCvD","p":"","c":["","docs","components","alert-dialog"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":["alert-dialog",{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f3d2d091ae8dd5fd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["alert-dialog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children","alert-dialog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","h1",null,{"ref":"$undefined","children":"Alert Dialog","className":"text-3xl py-2 font-bold text-foreground w-fit"}],["$","hr",null,{}],["$","div",null,{"className":"bg-gradient-to-br from-primary to-secondary flex justify-center items-center rounded-lg py-14","children":["$","div",null,{"className":"rounded-lg bg-transparent max-w-[40rem]","children":["$","$Lf",null,{"children":[["$","$L10",null,{"children":"Open Dialog"}],["$","$L11",null,{"children":[["$","$L12",null,{"children":[["$","$L13",null,{"children":"Are you sure?"}],["$","$L14",null,{"children":"This action cannot be undone. This will permanently delete your account and remove your data from our servers."}]]}],["$","$L15",null,{"children":[["$","$L16",null,{"children":"Cancel"}],["$","$L17",null,{"children":"Continue"}]]}]]}]]}]}]}],["$","$L18",null,{"defaultKey":"usage","children":[["$","$L19",null,{"children":[["$","$L1a",null,{"triggerKey":"usage","children":"Usage"}],["$","$L1a",null,{"triggerKey":"tsx","children":"TSX"}]]}],["$","$L1b",null,{"triggerKey":"usage","children":["$","$L1c",null,{"language":"tsx","children":"$1d"}]}],["$","$L1b",null,{"triggerKey":"tsx","children":["$","$L1c",null,{"language":"tsx","children":"$1e"}]}]]}]],null,["$","$L1f",null,{"children":"$L20"}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","iD1JHN5OLS5rcxGir_6Gt",{"children":[["$","$L21",null,{"children":"$L22"}],["$","$L23",null,{"children":"$L24"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$25","$undefined"],"s":false,"S":true}
+24:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+22:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Create Next App"}],["$","meta","2",{"name":"description","content":"Generated by create next app"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+20:null

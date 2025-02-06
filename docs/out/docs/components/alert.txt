@@ -1,0 +1,123 @@
+1:"$Sreact.fragment"
+2:I[5244,[],""]
+3:I[3866,[],""]
+4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"StaticNavbar"]
+5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarHeader"]
+6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SidebarTriggerButton"]
+7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],""]
+8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarMenus"]
+9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarMenu"]
+a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"NavbarLink"]
+b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SearchModalTrigger"]
+c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"SearchModal"]
+d:I[1166,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"default"]
+e:I[811,["181","static/chunks/181-a11b75422f6c6061.js","386","static/chunks/386-ebb14ef1f50de4b8.js","499","static/chunks/app/docs/layout-d56e4aba2bc12aea.js"],"default"]
+f:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","224","static/chunks/app/docs/components/alert/page-67cf216a16a4a3aa.js"],"Tabs"]
+10:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","224","static/chunks/app/docs/components/alert/page-67cf216a16a4a3aa.js"],"TabsList"]
+11:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","224","static/chunks/app/docs/components/alert/page-67cf216a16a4a3aa.js"],"TabsTrigger"]
+12:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","224","static/chunks/app/docs/components/alert/page-67cf216a16a4a3aa.js"],"TabsContent"]
+13:I[9389,["181","static/chunks/181-a11b75422f6c6061.js","662","static/chunks/662-3bf301a8ca069ea8.js","224","static/chunks/app/docs/components/alert/page-67cf216a16a4a3aa.js"],"default"]
+16:I[6213,[],"OutletBoundary"]
+18:I[6213,[],"MetadataBoundary"]
+1a:I[6213,[],"ViewportBoundary"]
+1c:I[4835,[],""]
+:HL["/_next/static/media/569ce4b8f30dc480-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/f3d2d091ae8dd5fd.css","style"]
+14:T54a,import { Alert, AlertDescription, AlertIcon, AlertTitle } from "@/components/ui/alert/Alert";
+
+const AlertPreview: React.FC = () => {
+    return (
+        <div className="flex flex-col gap-1">
+            <Alert>
+                <AlertIcon>🛈</AlertIcon>
+                <AlertTitle>Information</AlertTitle>
+                <AlertDescription>
+                    Your profile has been updated successfully.
+                </AlertDescription>
+            </Alert>
+            <Alert type='success'>
+                <AlertIcon>✔</AlertIcon>
+                <AlertTitle>Success</AlertTitle>
+                <AlertDescription>
+                    Your order has been placed successfully.
+                </AlertDescription>
+            </Alert>
+            <Alert type='danger'>
+                <AlertIcon>!</AlertIcon>
+                <AlertTitle>Error</AlertTitle>
+                <AlertDescription>
+                    There was an error processing your payment.
+                </AlertDescription>
+            </Alert>
+            <Alert type='warning'>
+                <AlertIcon>⚠</AlertIcon>
+                <AlertTitle>Warning</AlertTitle>
+                <AlertDescription>
+                    Your password will expire in 3 days.
+                </AlertDescription>
+            </Alert>
+        </div>
+    );
+};
+
+export default AlertPreview;15:T78c,import React, { forwardRef, HTMLProps } from 'react';
+import { cn } from '@/lib/utils'; // Import the cn function
+
+interface AlertProps extends HTMLProps<HTMLDivElement> {
+    type?: 'default' | 'success' | 'danger' | 'warning';
+}
+// Alert component
+const Alert = forwardRef<HTMLDivElement, AlertProps>(({ children, className = "", type = 'default', ...props }, ref) => {
+    return (
+        <div ref={ref} className={cn("relative p-3 mb-4 rounded-lg", getAlertStyles(type), className)} role="alert" {...props}>
+            {children}
+        </div>
+    );
+});
+
+// AlertIcon component
+const AlertIcon = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => {
+  return (
+    <div ref={ref} className={cn("absolute w-[2.5rem] text-3xl h-[2.5rem] flex justify-center items-center", className)} {...props}>
+      {children}
+    </div>
+  );
+});
+
+// AlertTitle component
+const AlertTitle = forwardRef<HTMLHeadingElement, HTMLProps<HTMLHeadingElement>>(({ children, className = "", ...props }, ref) => {
+  return (
+    <h3 ref={ref} className={cn("ml-12 font-semibold", className)} {...props}>
+      {children}
+    </h3>
+  );
+});
+
+// AlertDescription component
+const AlertDescription = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => {
+  return (
+    <div ref={ref} className={cn("ml-12", className)} {...props}>
+      {children}
+    </div>
+  );
+});
+
+// Utility function to get styles based on alert type
+const getAlertStyles = (type: 'default' | 'success' | 'danger' | 'warning') => {
+  switch (type) {
+    case 'success':
+      return 'bg-green-100 text-green-700';
+    case 'danger':
+      return 'bg-red-100 text-red-700';
+    case 'warning':
+      return 'bg-yellow-100 text-yellow-700';
+    default:
+      return 'bg-background text-foreground';
+  }
+};
+
+export { Alert, AlertIcon, AlertTitle, AlertDescription, getAlertStyles };0:{"P":null,"b":"jsR5kjarPPsVILCsioCvD","p":"","c":["","docs","components","alert"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":["alert",{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f3d2d091ae8dd5fd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["alert",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children","alert","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","h1",null,{"ref":"$undefined","children":"Alert","className":"text-3xl py-2 font-bold text-foreground w-fit"}],["$","hr",null,{}],["$","div",null,{"className":"bg-gradient-to-br from-primary to-secondary flex justify-center items-center rounded-lg py-14","children":["$","div",null,{"className":"rounded-lg bg-transparent max-w-[40rem]","children":["$","div",null,{"className":"flex flex-col gap-1","children":[["$","div",null,{"ref":"$undefined","className":"relative p-3 mb-4 rounded-lg bg-background text-foreground","role":"alert","children":[["$","div",null,{"ref":"$undefined","className":"absolute w-[2.5rem] text-3xl h-[2.5rem] flex justify-center items-center","children":"🛈"}],["$","h3",null,{"ref":"$undefined","className":"ml-12 font-semibold","children":"Information"}],["$","div",null,{"ref":"$undefined","className":"ml-12","children":"Your profile has been updated successfully."}]]}],["$","div",null,{"ref":"$undefined","className":"relative p-3 mb-4 rounded-lg bg-green-100 text-green-700","role":"alert","children":[["$","div",null,{"ref":"$undefined","className":"absolute w-[2.5rem] text-3xl h-[2.5rem] flex justify-center items-center","children":"✔"}],["$","h3",null,{"ref":"$undefined","className":"ml-12 font-semibold","children":"Success"}],["$","div",null,{"ref":"$undefined","className":"ml-12","children":"Your order has been placed successfully."}]]}],["$","div",null,{"ref":"$undefined","className":"relative p-3 mb-4 rounded-lg bg-red-100 text-red-700","role":"alert","children":[["$","div",null,{"ref":"$undefined","className":"absolute w-[2.5rem] text-3xl h-[2.5rem] flex justify-center items-center","children":"!"}],["$","h3",null,{"ref":"$undefined","className":"ml-12 font-semibold","children":"Error"}],["$","div",null,{"ref":"$undefined","className":"ml-12","children":"There was an error processing your payment."}]]}],["$","div",null,{"ref":"$undefined","className":"relative p-3 mb-4 rounded-lg bg-yellow-100 text-yellow-700","role":"alert","children":[["$","div",null,{"ref":"$undefined","className":"absolute w-[2.5rem] text-3xl h-[2.5rem] flex justify-center items-center","children":"⚠"}],["$","h3",null,{"ref":"$undefined","className":"ml-12 font-semibold","children":"Warning"}],["$","div",null,{"ref":"$undefined","className":"ml-12","children":"Your password will expire in 3 days."}]]}]]}]}]}],["$","$Lf",null,{"defaultKey":"usage","children":[["$","$L10",null,{"children":[["$","$L11",null,{"triggerKey":"usage","children":"Usage"}],["$","$L11",null,{"triggerKey":"tsx","children":"TSX"}]]}],["$","$L12",null,{"triggerKey":"usage","children":["$","$L13",null,{"language":"tsx","children":"$14"}]}],["$","$L12",null,{"triggerKey":"tsx","children":["$","$L13",null,{"language":"tsx","children":"$15"}]}]]}]],null,["$","$L16",null,{"children":"$L17"}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","BkZBRFsAIY3dW404wT3ej",{"children":[["$","$L18",null,{"children":"$L19"}],["$","$L1a",null,{"children":"$L1b"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$1c","$undefined"],"s":false,"S":true}
+1b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Create Next App"}],["$","meta","2",{"name":"description","content":"Generated by create next app"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+17:null

@@ -1,0 +1,10 @@
+interface ComponentPreviews {
+    [key: string]: string
+}
+interface ComponentCodes {
+    [key: string]: string
+}
+const componentPreviews = {{preview-data}}
+const tsxCodes = {{tsx-data}}
+
+export { componentPreviews, tsxCodes }

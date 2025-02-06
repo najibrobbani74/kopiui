@@ -1,0 +1,1 @@
+/mnt/Data/Programs/code/project/KomponenUi/next-native/new/kopiui/packages/docs/settings/component-list.ts
