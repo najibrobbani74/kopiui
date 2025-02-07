@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Navigate to project directory
-        run: cd packages/docs/kopiui-docs
+        run: cd docs
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -80,7 +80,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/kopiui-docs/out
+          path: ./docs/out
 
   # Deployment job
   deploy:
