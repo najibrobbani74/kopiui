@@ -1,5 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 import { createContext, FC, forwardRef, HTMLProps, ReactNode, useContext, useState } from 'react'
 
 interface SidebarProps extends HTMLProps<HTMLDivElement> {
@@ -75,11 +76,11 @@ const SidebarCloseButton = forwardRef<HTMLLabelElement, HTMLProps<HTMLLabelEleme
 })
 SidebarCloseButton.displayName = 'SidebarCloseButton';
 
-const SidebarMenuLink = forwardRef<HTMLAnchorElement, HTMLProps<HTMLAnchorElement>>(({ className = "", children, ...props }, ref) => {
+const SidebarMenuLink = forwardRef<HTMLAnchorElement, HTMLProps<HTMLAnchorElement> & { href: string }>(({ className = "", children, href, ...props }, ref) => {
     return (
-        <a className={className} ref={ref} {...props}>
+        <Link href={href} className={className} ref={ref} {...props}>
             {children}
-        </a>
+        </Link>
     )
 })
 SidebarMenuLink.displayName = 'SidebarMenuLink';

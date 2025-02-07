@@ -4,19 +4,19 @@ import { forwardRef, HTMLProps, useState } from 'react';
 import { cn } from "@/lib/utils"
 
 interface CodeBlockProps extends HTMLProps<HTMLDivElement> {
-    children: string;
+    code: string;
     language: string;
     collapsible?: boolean;
     lineCount?: number;
     withLineNumbers?: boolean;
 }
 
-const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ children, language, collapsible = true, lineCount, className, style, withLineNumbers = false, ...props }, ref) => {
+const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ code, language, collapsible = true, lineCount, className, style, withLineNumbers = false, ...props }, ref) => {
     const [copied, setCopied] = useState(false);
     const [expanded, setExpanded] = useState(false);
 
     function copyToClipboard() {
-        navigator.clipboard.writeText(children);
+        navigator.clipboard.writeText(code);
         setCopied(true);
         setTimeout(() => {
             setCopied(false);
@@ -52,7 +52,7 @@ const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ children, langua
             <div className={cn('absolute overflow-y-scroll w-full', (collapsible || lineCount ? "h-full" : "h-fit"), expanded ? "pb-20" : "")}>
                 <Highlight
                     theme={themes.okaidia}
-                    code={children}
+                    code={code}
                     language={language}
                 >
                     {({ className, style, tokens, getLineProps, getTokenProps }) => (

@@ -1,6 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 import { forwardRef, HTMLAttributes, HTMLProps, useEffect, useMemo, useRef, useState } from "react"
 
 interface SearchModalProps extends HTMLAttributes<HTMLDivElement> {
@@ -64,7 +65,7 @@ const SearchModal = forwardRef<HTMLDivElement, SearchModalProps>(({ children, tr
                     {filteredData.map((item, index) => {
                         return (
                             <div key={index} className="flex flex-row p-4 items-center hover:bg-primary hover:text-primary-foreground">
-                                <a href={item.link}>{item.title}</a>
+                                <Link href={item.link}>{item.title}</Link>
                             </div>
                         )
                     })}

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link'
 import React, { AnchorHTMLAttributes, createContext, FC, ForwardedRef, forwardRef, HTMLProps, ReactNode, useContext, useState, } from 'react'
 
 const StaticNavbar = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ className = '', children, ...props }, ref: ForwardedRef<HTMLDivElement>) => {
@@ -51,11 +52,11 @@ const NavbarMenus = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ cla
 interface NavbarLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     isActive?: boolean
 }
-const NavbarLink = forwardRef<HTMLAnchorElement, NavbarLinkProps>(({ children, className = "", isActive = false, ...props }, ref) => {
+const NavbarLink = forwardRef<HTMLAnchorElement, NavbarLinkProps>(({ children, className = "", isActive = false, href = "", ...props }, ref) => {
     return (
-        <a className={"text-foreground hover:opacity-100 " + (isActive ? "opacity-100" : "opacity-70") + className} ref={ref} {...props}>
+        <Link className={"text-foreground hover:opacity-100 " + (isActive ? "opacity-100" : "opacity-70") + className} ref={ref} href={href} {...props}>
             {children}
-        </a>
+        </Link>
     )
 })
 NavbarLink.displayName = 'NavbarLink'
