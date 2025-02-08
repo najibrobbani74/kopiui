@@ -165,9 +165,12 @@ export async function addComponent(component: string) {
       fs.writeFileSync(destPath, file.content);
       console.log(`🟢 Create ${colors.green}${file.name}${colors.reset}`);
     }
+    console.log(data);
     
     // Check required packages
     if (data.packages) {
+      console.log('\n📦 Checking required packages...');
+      
       const installedPackages = await listDependencies();
       const { needsInstall, missing } = await displayPackageComparison(data.packages, installedPackages);
 

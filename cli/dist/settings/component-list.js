@@ -29,6 +29,15 @@ const componentList = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
     "alert": {
@@ -57,6 +66,15 @@ const componentList = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
     "alert-dialog": {
@@ -85,6 +103,15 @@ const componentList = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
 };
