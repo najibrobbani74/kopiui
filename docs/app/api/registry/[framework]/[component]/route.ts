@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import componentList, { FrameworkList } from "@/settings/component-list";
+import componentList, { FrameworkListType } from "@/settings/component-list";
 import { readFile } from "@/utils/files-utils";
 export const dynamic = "force-static"
 
@@ -8,8 +8,8 @@ export async function generateStaticParams() {
     const params: Params[] = []
     Object.keys(componentList).forEach((component) => {
         Object.keys(componentList[component].sourceFiles).forEach((framework) => {
-            if (FrameworkList.includes(framework as typeof FrameworkList[number])) {
-                params.push({ framework: framework as typeof FrameworkList[number], component });
+            if (FrameworkListType.includes(framework as typeof FrameworkListType[number])) {
+                params.push({ framework: framework as typeof FrameworkListType[number], component });
             }
         });
     });
@@ -21,7 +21,7 @@ type Props = {
     params: Promise<Params>;
 }
 type Params = {
-    framework: typeof FrameworkList[number];
+    framework: typeof FrameworkListType[number];
     component: string;
 }
 
@@ -35,6 +35,12 @@ export async function GET(request: NextRequest, { params }: Props) {
     const framework = (await params).framework; // Ambil dari URL
     const component = (await params).component; // Ambil dari URL
 
+    if (!componentList[component]?.sourceFiles?.[framework]) {
+        return NextResponse.json({
+            error: "Component not found"
+        }, { status: 404 });
+    }
+    
     const files: FileType[] = await Promise.all(componentList[component].sourceFiles[framework].map(async (file) => {
         return {
             name: file.name,

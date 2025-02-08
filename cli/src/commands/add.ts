@@ -1,44 +1,47 @@
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
-import axios from "axios";
-import componentList from "../settings/component-list";
+import componentList, { FrameworkListType } from "../settings/component-list";
 
-const BASE_URL = "http://localhost:3000/api"; // adjust as needed
+const BASE_URL = "https://kopiui.najibrobbani.site/api/registry"; // adjust as needed
 
 type ResponseBodyType = {
-  data: ResponseDataType;
+  data: {
+    files: Array<{
+      name: string;
+      content: string;
+      targetPath: string;
+    }>;
+    dependencies: string[];
+  };
 }
 
-type ResponseErrorType = {
-  errors: string[];
-}
+export async function addComponent(component: string) {
+  const framework = component.split(":")[0];
+  const componentKey = component.split(":")[1];
 
-type ResponseDataType = {
-  files: FilesType[];
-  dependencies: string[];
-}
 
-type FilesType = {
-  name: string;
-  content: string;
-  targetPath: string;
-}
-
-export async function addComponent(componentKey: string) {
-  // Check if component exists in componentList
   if (!componentList[componentKey]) {
     console.error(`❌ Component '${componentKey}' not found in component list`);
+    process.exit(1);
+  }
+  if (!FrameworkListType.includes(framework as typeof FrameworkListType[number])) {
+    console.error(`❌ Framework not provided`);
     process.exit(1);
   }
 
   try {
     // Make API request
-    const response = await axios.get<ResponseBodyType>(`${BASE_URL}/components/${componentKey}`);
-    const { files, dependencies } = response.data.data;
+    console.log(`${BASE_URL}/${framework}/${componentKey}`);
+    const response = await fetch(`${BASE_URL}/${framework}/${componentKey}`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const { data } = await response.json() as ResponseBodyType;
 
     // Create and write files
-    for (const file of files) {
+    for (const file of data.files) {
       const destPath = path.join(process.cwd(), file.targetPath);
       const destDir = path.dirname(destPath);
 
@@ -53,21 +56,16 @@ export async function addComponent(componentKey: string) {
     }
 
     // Install dependencies if any
-    if (dependencies.length > 0) {
+    if (data.dependencies && data.dependencies.length > 0) {
       console.log("📦 Installing dependencies...");
-      execSync(`npm install ${dependencies.join(" ")}`, { stdio: "inherit" });
+      execSync(`npm install ${data.dependencies.join(" ")}`, { stdio: "inherit" });
       console.log("✅ Dependencies installed");
     }
 
     console.log(`✨ Component ${componentKey} added successfully!`);
 
   } catch (error) {
-    if (axios.isAxiosError(error) && error.response?.data) {
-      const errorData = error.response.data as ResponseErrorType;
-      console.error("❌ Error:", errorData.errors.join(", "));
-    } else {
-      console.error("❌ Error:", error);
-    }
+    console.error("❌ Error:", error instanceof Error ? error.message : String(error));
     process.exit(1);
   }
 }

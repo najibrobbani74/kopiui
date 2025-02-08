@@ -7,13 +7,20 @@ interface CodeBlockProps extends HTMLProps<HTMLDivElement> {
     code: string;
     language: string;
     collapsible?: boolean;
-    lineCount?: number;
     withLineNumbers?: boolean;
+    maxHeight?: string;
 }
 
-const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ code, language, collapsible = true, lineCount, className, style, withLineNumbers = false, ...props }, ref) => {
+const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ code, language, collapsible = true, className, style, maxHeight, withLineNumbers = false, ...props }, ref) => {
     const [copied, setCopied] = useState(false);
     const [expanded, setExpanded] = useState(false);
+    collapsible = collapsible && countLines(code) > 10;
+
+    function countLines(code: string): number {
+        return (code.match(/\n/g) || []).length;
+    }
+
+    const lines = countLines(code);    
 
     function copyToClipboard() {
         navigator.clipboard.writeText(code);
@@ -25,12 +32,13 @@ const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ code, language, 
 
     return (
         <div ref={ref} {...props} className={cn('relative', className)} style={{
-            height: collapsible ? (((expanded ? (lineCount ?? 30) : 10) * 1.5) + 1 + 'rem') : lineCount ? ((lineCount * 1.5) + 1 + 'rem') : 'auto',
+            height: collapsible ? expanded ? ((lines+5) * 1.5) + "rem" : (10 * 1.5) + "rem" : 'auto',
+            maxHeight: maxHeight,
             ...style
         }}>
             {collapsible ? (
                 <div className='absolute bottom-0 left-0 z-[1] flex justify-center py-5 w-full bg-gradient-to-t from-background via-background/70'>
-                    <button onClick={() => setExpanded(!expanded)} className='bg-background border hover:bg-primary/50 text-foreground px-5 py-2 rounded-lg'>{expanded ? "Collapse" : "Expand"}</button>
+                    <button onClick={() => setExpanded(!expanded)} className='bg-background border-2 shadow hover:bg-background/50 transition-colors px-5 py-2 rounded-lg'>{expanded ? "Collapse" : "Expand"}</button>
                 </div>
             ) : null}
 
@@ -40,16 +48,16 @@ const CodeBlock = forwardRef<HTMLDivElement, CodeBlockProps>(({ code, language, 
                         <path transform=" translate(-12, -12)" d="M 4 2 C 2.895 2 2 2.895 2 4 L 2 18 L 4 18 L 4 4 L 18 4 L 18 2 L 4 2 z M 8 6 C 6.895 6 6 6.895 6 8 L 6 20 C 6 21.105 6.895 22 8 22 L 20 22 C 21.105 22 22 21.105 22 20 L 22 8 C 22 6.895 21.105 6 20 6 L 8 6 z M 8 8 L 20 8 L 20 20 L 8 20 L 8 8 z" strokeLinecap="round" />
                     </g>
                 </svg>
-                <div className={cn(copied ? "flex flex-row justify-center bg-green-500/20 p-1 rounded-lg items-center gap-1" : "hidden")}>
-                    <svg className={cn('fill-green-500')} id='Checkmark_24' width='18' height='18' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+                <div className={cn(copied ? "flex flex-row justify-center bg-green-500 p-1 rounded-lg items-center gap-1" : "hidden")}>
+                    <svg className={cn('fill-white')} id='Checkmark_24' width='18' height='18' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
                         <g transform="matrix(1.15 0 0 1.15 12 12)" >
                             <path transform=" translate(-12, -11.84)" d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z" strokeLinecap="round" />
                         </g>
                     </svg>
-                    <span className={cn('text-green-500 font-bold text-xs')}>Copied</span>
+                    <span className={cn('text-white font-bold text-xs')}>Copied</span>
                 </div>
             </button>
-            <div className={cn('absolute overflow-y-scroll w-full', (collapsible || lineCount ? "h-full" : "h-fit"), expanded ? "pb-20" : "")}>
+            <div className={cn('absolute overflow-y-scroll w-full', (collapsible ? "h-full" : "h-fit"), expanded ? "pb-20" : "")}>
                 <Highlight
                     theme={themes.okaidia}
                     code={code}

@@ -1,1 +1,1 @@
-/mnt/Data/Programs/code/project/KomponenUi/next-native/new/kopiui/packages/docs/settings/component-list.ts
+/mnt/Data/Programs/code/project/KomponenUi/next-native/new-2/kopiui/docs/settings/component-list.ts

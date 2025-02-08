@@ -34,7 +34,7 @@ export default function DocsLayout({ children }: { children: ReactNode }) {
                         })} triggerKey="search-modal" />
                     </NavbarMenu>
                     <NavbarMenu>
-                        <DayNightToggle />
+                        <DayNightToggle defaultTheme="dark" />
                     </NavbarMenu>
                 </NavbarMenus>
             </StaticNavbar>

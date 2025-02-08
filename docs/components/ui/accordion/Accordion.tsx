@@ -5,7 +5,7 @@ import { createContext, FC, forwardRef, HTMLProps, MouseEvent, ReactNode, useCon
 
 const Accordion = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>(({ children, className = "", ...props }, ref) => {
     return (
-        <div className={cn(className, "border rounded-lg first:border-t-0")} ref={ref} {...props}>
+        <div className={cn("border rounded-lg first:border-t-0", className)} ref={ref} {...props}>
             {children}
         </div>
     );

@@ -8,10 +8,9 @@ type ComponentType = {
     previewFilePath: string
     sourceFiles: SourceFilesType
 }
-
-export const FrameworkList = ["nextjs-ts"] as const
+export const FrameworkListType = ["nextjs-ts"] as const
 type SourceFilesType = {
-    [key in typeof FrameworkList[number]]: FileType[]
+    [key in typeof FrameworkListType[number]]: FileType[]
 }
 export type FileType = {
     name: string;
@@ -55,7 +54,7 @@ const componentList: ComponentListType = {
                     targetPath: "/components/ui/accordion/Accordion.tsx",
                 },
                 {
-                    name: "utils.tsx",
+                    name: "utils.ts",
                     title: "Utils",
                     sourcePath: process.cwd() + "/lib/utils.ts",
                     targetPath: "/lib/utils.ts",
@@ -83,7 +82,7 @@ const componentList: ComponentListType = {
                     targetPath: "/components/ui/alert/Alert.tsx",
                 },
                 {
-                    name: "utils.tsx",
+                    name: "utils.ts",
                     title: "Utils",
                     sourcePath: process.cwd() + "/lib/utils.ts",
                     targetPath: "/lib/utils.ts",
@@ -111,7 +110,7 @@ const componentList: ComponentListType = {
                     targetPath: "/components/ui/alert-dialog/AlertDialog.tsx",
                 },
                 {
-                    name: "utils.tsx",
+                    name: "utils.ts",
                     title: "Utils",
                     sourcePath: process.cwd() + "/lib/utils.ts",
                     targetPath: "/lib/utils.ts",

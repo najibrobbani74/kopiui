@@ -1,10 +1,12 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { forwardRef, HTMLProps, useEffect, useState } from 'react';
-
-const DayNightToggle = forwardRef<HTMLLabelElement, HTMLProps<HTMLLabelElement>>(({ className = "", ...props }, ref) => {
-    const [theme, setTheme] = useState('light');
+import { forwardRef, HTMLProps, useEffect, useMemo, useState } from 'react';
+type DayNightToggleProps = HTMLProps<HTMLLabelElement> & {
+    defaultTheme?: 'light' | 'dark'
+}
+const DayNightToggle = forwardRef<HTMLLabelElement, DayNightToggleProps>(({ className = "", defaultTheme = "light", ...props }, ref) => {
+    const [theme, setTheme] = useState(defaultTheme);
     useEffect(() => {
         document.documentElement.classList.add(theme == "dark" ? "dark" : "light");
         document.documentElement.classList.remove(theme == "dark" ? "light" : "dark");
