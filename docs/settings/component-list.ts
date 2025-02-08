@@ -7,8 +7,19 @@ type ComponentType = {
     docsPath: string
     previewFilePath: string
     sourceFiles: SourceFilesType
+    packages: PackagesType
 }
 export const FrameworkListType = ["nextjs-ts"] as const
+type PackagesType = {
+    [key in typeof FrameworkListType[number]]: {
+        dependencies:{
+            [key: string]: string
+        },
+        devDependencies:{
+            [key: string]: string
+        }
+    }
+}
 type SourceFilesType = {
     [key in typeof FrameworkListType[number]]: FileType[]
 }
@@ -18,20 +29,26 @@ export type FileType = {
     sourcePath: string;
     targetPath: string;
 }
-type ResponseBodyType = {
-    data: ResponseDataType;
-}
 
 
 type ResponseErrorType = {
     errors: string[];
 }
-
-type ResponseDataType = {
-    files: FileType[];
-    dependencies: string[];
+export type ResponseBodyType = {
+    data: ResponseDataType;
 }
-
+type ResponseDataType = {
+    files: ResponseFileType[];
+    packages: {
+        dependencies: { [key: string]: string };
+        devDependencies: { [key: string]: string };
+    };
+}
+export type ResponseFileType = {
+    name: string;
+    content: string;
+    targetPath: string;
+}
 
 const componentList: ComponentListType = {
     "accordion": {
@@ -60,6 +77,15 @@ const componentList: ComponentListType = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
     "alert": {
@@ -88,6 +114,15 @@ const componentList: ComponentListType = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
     "alert-dialog": {
@@ -116,6 +151,15 @@ const componentList: ComponentListType = {
                     targetPath: "/lib/utils.ts",
                 }
             ],
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: {
+                    "clsx": "^2.1.1",
+                    "tailwind-merge": "^3.0.1"
+                },
+                devDependencies: {}
+            }
         }
     },
 }

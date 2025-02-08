@@ -10,3 +10,10 @@ commander_1.program
     (0, add_1.addComponent)(component);
 });
 commander_1.program.parse(process.argv);
+commander_1.program
+    .command("init")
+    .description("Initialize a setup")
+    .action(() => {
+    console.log("Initializing setup...");
+    // Add initialization logic here
+});

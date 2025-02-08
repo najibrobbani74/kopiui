@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FrameworkListType = void 0;
-exports.FrameworkListType = ["nextjs-ts", "nextjs-js"];
+exports.FrameworkListType = ["nextjs-ts"];
 const componentList = {
     "accordion": {
         name: "Accordion",

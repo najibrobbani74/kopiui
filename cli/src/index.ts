@@ -11,3 +11,10 @@ program
   });
 
 program.parse(process.argv);
+program
+  .command("init")
+  .description("Initialize a setup")
+  .action(() => {
+    console.log("Initializing setup...");
+    // Add initialization logic here
+  });

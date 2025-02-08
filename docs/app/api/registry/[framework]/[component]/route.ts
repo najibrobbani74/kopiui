@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import componentList, { FrameworkListType } from "@/settings/component-list";
+import componentList, { FrameworkListType, ResponseFileType } from "@/settings/component-list";
 import { readFile } from "@/utils/files-utils";
 export const dynamic = "force-static"
 
@@ -25,12 +25,6 @@ type Params = {
     component: string;
 }
 
-type FileType = {
-    name: string;
-    content: string;
-    targetPath: string;
-}
-
 export async function GET(request: NextRequest, { params }: Props) {
     const framework = (await params).framework; // Ambil dari URL
     const component = (await params).component; // Ambil dari URL
@@ -40,8 +34,9 @@ export async function GET(request: NextRequest, { params }: Props) {
             error: "Component not found"
         }, { status: 404 });
     }
-    
-    const files: FileType[] = await Promise.all(componentList[component].sourceFiles[framework].map(async (file) => {
+    const components = componentList[component].sourceFiles[framework].filter((item) => item.title.toLowerCase() !== "usage"); 
+
+    const files: ResponseFileType[] = await Promise.all(components.map(async (file) => {
         return {
             name: file.name,
             content: await readFile(file.sourcePath),
@@ -49,9 +44,12 @@ export async function GET(request: NextRequest, { params }: Props) {
         }
     }));
 
+    const dependencies = componentList[component].packages[framework];
+
     return NextResponse.json({
         data: {
-            files
+            files,
+            dependencies,
         }
     });
 }
