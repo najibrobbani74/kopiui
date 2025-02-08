@@ -44,12 +44,12 @@ export async function GET(request: NextRequest, { params }: Props) {
         }
     }));
 
-    const dependencies = componentList[component].packages[framework];
+    const packages = componentList[component].packages[framework];
 
     return NextResponse.json({
         data: {
             files,
-            dependencies,
+            packages,
         }
     });
 }
