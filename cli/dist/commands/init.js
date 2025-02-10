@@ -34,27 +34,6 @@ async function initSetup(framework) {
             const destPath = path_1.default.join(process.cwd(), file.targetPath);
             const destDir = path_1.default.dirname(destPath);
             if (fs_1.default.existsSync(destPath)) {
-                // Special handling for tailwind.config
-                if (file.name === 'tailwind.config.js' || file.name === 'tailwind.config.ts') {
-                    const existingContent = fs_1.default.readFileSync(destPath, 'utf-8');
-                    try {
-                        // Extract theme.extend from existing config
-                        const existingExtend = existingContent.match(/theme:\s*{[\s\n]*extend:\s*{[^}]*}}/s)?.[0] || '';
-                        const newContent = file.content;
-                        const newExtend = newContent.match(/theme:\s*{[\s\n]*extend:\s*{[^}]*}}/s)?.[0] || '';
-                        if (existingExtend && newExtend) {
-                            // Merge the extend objects
-                            const mergedContent = mergeTailwindExtend(existingContent, newContent);
-                            fs_1.default.writeFileSync(destPath, mergedContent);
-                            console.log(`🟢 Update Tailwind config in ${colors.green}${file.targetPath}${colors.reset}`);
-                            continue;
-                        }
-                    }
-                    catch (error) {
-                        console.warn(`⚠️ Could not merge tailwind configs, skipping: ${error}`);
-                        continue;
-                    }
-                }
                 // Special handling for globals.css
                 if (file.name === 'globals.css') {
                     const existingGlobals = fs_1.default.existsSync(destPath) ? fs_1.default.readFileSync(destPath, 'utf-8') : '';
@@ -175,28 +154,4 @@ function mergeVariables(existing, newVars) {
     const newVarList = newVars.match(/--[\w-]+:\s*[^;]+/g) || [];
     const merged = [...(new Set([...existingVars, ...newVarList]))].sort();
     return newVars.replace(/({[^}]+})/, `{\n    ${[...merged].join(';\n    ')};\n  }`);
-}
-function mergeTailwindExtend(existing, newConfig) {
-    // Helper function to extract extend object
-    const getExtendObject = (content) => {
-        const match = content.match(/theme:\s*{[\s\n]*extend:\s*({[^}]*})/s);
-        if (!match)
-            return {};
-        try {
-            // Convert the matched string to a valid object string
-            const objStr = match[1].replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":')
-                .replace(/'/g, '"')
-                .replace(/,(\s*[}\]])/g, '$1');
-            return JSON.parse(objStr);
-        }
-        catch {
-            return {};
-        }
-    };
-    const existingExtend = getExtendObject(existing);
-    const newExtend = getExtendObject(newConfig);
-    // Deep merge the extend objects
-    const mergedExtend = { ...existingExtend, ...newExtend };
-    // Replace the extend object in the new config
-    return existing.replace(/(theme:\s*{[\s\n]*extend:\s*){[^}]*}}/s, `$1${JSON.stringify(mergedExtend, null, 2)}}`);
 }

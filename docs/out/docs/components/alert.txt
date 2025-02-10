@@ -1,17 +1,17 @@
 1:"$Sreact.fragment"
 2:I[5244,[],""]
 3:I[3866,[],""]
-4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"StaticNavbar"]
-5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"NavbarHeader"]
-6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"SidebarTriggerButton"]
-7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],""]
-8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"NavbarMenus"]
-9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"NavbarMenu"]
-a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"NavbarLink"]
-b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"SearchModalTrigger"]
-c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"SearchModal"]
-d:I[4402,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"default"]
-e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-403e3b5b977a3505.js"],"default"]
+4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"StaticNavbar"]
+5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarHeader"]
+6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SidebarTriggerButton"]
+7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],""]
+8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarMenus"]
+9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarMenu"]
+a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarLink"]
+b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SearchModalTrigger"]
+c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SearchModal"]
+d:I[4402,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"default"]
+e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"default"]
 10:I[6213,[],"OutletBoundary"]
 12:I[6213,[],"MetadataBoundary"]
 14:I[6213,[],"ViewportBoundary"]
@@ -19,7 +19,7 @@ e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173
 :HL["/_next/static/media/569ce4b8f30dc480-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/532b78aef3f792ce.css","style"]
-0:{"P":null,"b":"K94eGVo51XXW2fbPFrMEG","p":"","c":["","docs","components","alert"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":[["component","alert","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/532b78aef3f792ce.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{"defaultTheme":"dark"}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["component","alert","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children","$0:f:0:1:2:children:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":"$L11"}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","TQpSdIY2nuFUm7M_3WkGP",{"children":[["$","$L12",null,{"children":"$L13"}],["$","$L14",null,{"children":"$L15"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"vP9uGREo4npakaZLXWObr","p":"","c":["","docs","components","alert"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":[["component","alert","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/532b78aef3f792ce.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{"defaultTheme":"dark"}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["component","alert","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children","$0:f:0:1:2:children:2:children:2:children:0","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":"$L11"}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","Ra4Rm5Y-iqNIz-xdiai7d",{"children":[["$","$L12",null,{"children":"$L13"}],["$","$L14",null,{"children":"$L15"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
 17:I[9214,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","221","static/chunks/app/docs/components/%5Bcomponent%5D/page-e175e82822104802.js"],"PreloadChunks"]
 19:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","221","static/chunks/app/docs/components/%5Bcomponent%5D/page-e175e82822104802.js"],"Tabs"]
 1a:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","221","static/chunks/app/docs/components/%5Bcomponent%5D/page-e175e82822104802.js"],"TabsList"]
@@ -31,45 +31,7 @@ f:[["$","h1",null,{"ref":"$undefined","children":"Alert","className":"text-3xl p
 11:null
 1f:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","221","static/chunks/app/docs/components/%5Bcomponent%5D/page-e175e82822104802.js"],"TabsContent"]
 20:I[9389,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","221","static/chunks/app/docs/components/%5Bcomponent%5D/page-e175e82822104802.js"],"default"]
-21:T54a,import { Alert, AlertDescription, AlertIcon, AlertTitle } from "@/components/ui/alert/Alert";
-
-const AlertPreview: React.FC = () => {
-    return (
-        <div className="flex flex-col gap-1">
-            <Alert>
-                <AlertIcon>🛈</AlertIcon>
-                <AlertTitle>Information</AlertTitle>
-                <AlertDescription>
-                    Your profile has been updated successfully.
-                </AlertDescription>
-            </Alert>
-            <Alert type='success'>
-                <AlertIcon>✔</AlertIcon>
-                <AlertTitle>Success</AlertTitle>
-                <AlertDescription>
-                    Your order has been placed successfully.
-                </AlertDescription>
-            </Alert>
-            <Alert type='danger'>
-                <AlertIcon>!</AlertIcon>
-                <AlertTitle>Error</AlertTitle>
-                <AlertDescription>
-                    There was an error processing your payment.
-                </AlertDescription>
-            </Alert>
-            <Alert type='warning'>
-                <AlertIcon>⚠</AlertIcon>
-                <AlertTitle>Warning</AlertTitle>
-                <AlertDescription>
-                    Your password will expire in 3 days.
-                </AlertDescription>
-            </Alert>
-        </div>
-    );
-};
-
-export default AlertPreview;1c:["$","$L1f","0",{"triggerKey":"usage","children":["$","$L20",null,{"language":"tsx","maxHeight":"60rem","code":"$21"}]}]
-22:T849,// @/components/ui/alert/Alert.tsx
+21:T849,// @/components/ui/alert/Alert.tsx
 
 import React, { forwardRef, HTMLProps } from 'react';
 import { cn } from '@/lib/utils'; // Import the cn function
@@ -132,5 +94,43 @@ AlertIcon.displayName = 'AlertIcon'
 AlertTitle.displayName = 'AlertTitle'
 AlertDescription.displayName = 'AlertDescription'
 
-export { Alert, AlertIcon, AlertTitle, AlertDescription, getAlertStyles };1d:["$","$L1f","1",{"triggerKey":"tsx","children":["$","$L20",null,{"language":"tsx","maxHeight":"60rem","code":"$22"}]}]
+export { Alert, AlertIcon, AlertTitle, AlertDescription, getAlertStyles };1d:["$","$L1f","1",{"triggerKey":"tsx","children":["$","$L20",null,{"language":"tsx","maxHeight":"60rem","code":"$21"}]}]
+22:T54a,import { Alert, AlertDescription, AlertIcon, AlertTitle } from "@/components/ui/alert/Alert";
+
+const AlertPreview: React.FC = () => {
+    return (
+        <div className="flex flex-col gap-1">
+            <Alert>
+                <AlertIcon>🛈</AlertIcon>
+                <AlertTitle>Information</AlertTitle>
+                <AlertDescription>
+                    Your profile has been updated successfully.
+                </AlertDescription>
+            </Alert>
+            <Alert type='success'>
+                <AlertIcon>✔</AlertIcon>
+                <AlertTitle>Success</AlertTitle>
+                <AlertDescription>
+                    Your order has been placed successfully.
+                </AlertDescription>
+            </Alert>
+            <Alert type='danger'>
+                <AlertIcon>!</AlertIcon>
+                <AlertTitle>Error</AlertTitle>
+                <AlertDescription>
+                    There was an error processing your payment.
+                </AlertDescription>
+            </Alert>
+            <Alert type='warning'>
+                <AlertIcon>⚠</AlertIcon>
+                <AlertTitle>Warning</AlertTitle>
+                <AlertDescription>
+                    Your password will expire in 3 days.
+                </AlertDescription>
+            </Alert>
+        </div>
+    );
+};
+
+export default AlertPreview;1c:["$","$L1f","0",{"triggerKey":"usage","children":["$","$L20",null,{"language":"tsx","maxHeight":"60rem","code":"$22"}]}]
 1e:["$","$L1f","2",{"triggerKey":"utils","children":["$","$L20",null,{"language":"ts","maxHeight":"60rem","code":"// @/lib/utils.ts\n\nimport { clsx, type ClassValue } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs))\n}\n"}]}]

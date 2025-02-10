@@ -131,7 +131,9 @@ export const initSetup: {
     packages: {
         "nextjs-ts": {
             dependencies: {},
-            devDependencies: {}
+            devDependencies: {
+                "tailwindcss": "^3.4.1",
+            }
         }
     }
 }

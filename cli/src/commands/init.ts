@@ -33,50 +33,29 @@ export async function initSetup(framework: string) {
             const destPath = path.join(process.cwd(), file.targetPath);
             const destDir = path.dirname(destPath);
 
-            
+
 
             if (fs.existsSync(destPath)) {
-                // Special handling for tailwind.config
-                if (file.name === 'tailwind.config.js' || file.name === 'tailwind.config.ts') {
-                    const existingContent = fs.readFileSync(destPath, 'utf-8');
-                    try {
-                        // Extract theme.extend from existing config
-                        const existingExtend = existingContent.match(/theme:\s*{[\s\n]*extend:\s*{[^}]*}}/s)?.[0] || '';
-                        const newContent = file.content;
-                        const newExtend = newContent.match(/theme:\s*{[\s\n]*extend:\s*{[^}]*}}/s)?.[0] || '';
 
-                        if (existingExtend && newExtend) {
-                            // Merge the extend objects
-                            const mergedContent = mergeTailwindExtend(existingContent, newContent);
-                            fs.writeFileSync(destPath, mergedContent);
-                            console.log(`🟢 Update Tailwind config in ${colors.green}${file.targetPath}${colors.reset}`);
-                            continue;
-                        }
-                    } catch (error) {
-                        console.warn(`⚠️ Could not merge tailwind configs, skipping: ${error}`);
-                        continue;
-                    }
-                }
-                
                 // Special handling for globals.css
                 if (file.name === 'globals.css') {
                     const existingGlobals = fs.existsSync(destPath) ? fs.readFileSync(destPath, 'utf-8') : '';
                     const newContent = file.content;
-    
+
                     const existingRoot = existingGlobals.match(/:root\s*{[^}]+}/)?.[0] || '';
                     const existingDark = existingGlobals.match(/\.dark\s*{[^}]+}/)?.[0] || '';
                     const newRoot = newContent.match(/:root\s*{[^}]+}/)?.[0] || '';
                     const newDark = newContent.match(/\.dark\s*{[^}]+}/)?.[0] || '';
-    
+
                     let mergedRoot = existingRoot || newRoot;
                     let mergedDark = existingDark || newDark;
                     if (existingRoot && newRoot) {
                         mergedRoot = mergeVariables(existingRoot, newRoot);
-                    } 
+                    }
                     if (existingDark && newDark) {
                         mergedDark = mergeVariables(existingDark, newDark);
                     }
-    
+
                     const mergedContent = newContent
                         .replace(/:root\s*{[^}]+}/, mergedRoot)
                         .replace(/\.dark\s*{[^}]+}/, mergedDark);
@@ -186,33 +165,4 @@ function mergeVariables(existing: string, newVars: string): string {
     const newVarList = newVars.match(/--[\w-]+:\s*[^;]+/g) || [];
     const merged = [...(new Set([...existingVars, ...newVarList]))].sort();
     return newVars.replace(/({[^}]+})/, `{\n    ${[...merged].join(';\n    ')};\n  }`);
-}
-
-function mergeTailwindExtend(existing: string, newConfig: string): string {
-    // Helper function to extract extend object
-    const getExtendObject = (content: string) => {
-        const match = content.match(/theme:\s*{[\s\n]*extend:\s*({[^}]*})/s);
-        if (!match) return {};
-        try {
-            // Convert the matched string to a valid object string
-            const objStr = match[1].replace(/(['"])?([a-zA-Z0-9_]+)(['"])?:/g, '"$2":')
-                                  .replace(/'/g, '"')
-                                  .replace(/,(\s*[}\]])/g, '$1');
-            return JSON.parse(objStr);
-        } catch {
-            return {};
-        }
-    };
-
-    const existingExtend = getExtendObject(existing);
-    const newExtend = getExtendObject(newConfig);
-
-    // Deep merge the extend objects
-    const mergedExtend = { ...existingExtend, ...newExtend };
-
-    // Replace the extend object in the new config
-    return existing.replace(
-        /(theme:\s*{[\s\n]*extend:\s*){[^}]*}}/s,
-        `$1${JSON.stringify(mergedExtend, null, 2)}}`
-    );
 }
