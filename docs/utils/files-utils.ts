@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs';
-import { join } from 'path';
 
 export async function readFile(filePath: string): Promise<string> {
     try {
@@ -12,4 +11,11 @@ export async function readFile(filePath: string): Promise<string> {
         console.error(`Error reading file ${filePath}:`, error);
         throw error;
     }
+}
+
+export function keyToTitle(key: string): string {
+    return key.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+export function keyToComponentName(key: string): string {
+    return key.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join('');
 }

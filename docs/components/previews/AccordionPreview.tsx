@@ -2,6 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const AccordionPreview = () => {
     return (
+        <div className="bg-background max-w-[40rem] rounded-lg">
         <Accordion>
             <AccordionItem defaultOpen={true}>
                 <AccordionTrigger>JavaScript</AccordionTrigger>
@@ -22,6 +23,7 @@ const AccordionPreview = () => {
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
+        </div>
     )
 }
 

@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fapi\u002Fregistry\u002F[framework]\u002F[component]","\u002Fapi\u002Fregistry\u002Finit\u002F[framework]","\u002Fdocs\u002Fcomponents\u002F[component]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

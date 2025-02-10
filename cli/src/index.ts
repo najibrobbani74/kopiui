@@ -2,6 +2,7 @@
 
 import { program } from "commander";
 import { addComponent } from "./commands/add";
+import { initSetup } from "./commands/init";
 
 program
   .command("add <component>")
@@ -10,11 +11,11 @@ program
     addComponent(component);
   });
 
-program.parse(process.argv);
 program
-  .command("init")
+  .command("init <framework>")
   .description("Initialize a setup")
-  .action(() => {
-    console.log("Initializing setup...");
-    // Add initialization logic here
+  .action((framework) => {
+    initSetup(framework);
   });
+
+program.parse(process.argv);

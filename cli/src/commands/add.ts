@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { execSync } from "child_process";
+import { execa } from "execa";
 import inquirer from "inquirer";
 import componentList, { FrameworkListType, ResponseBodyType } from "../settings/component-list";
 
@@ -28,7 +28,7 @@ function compareVersions(required: string, installed: string): boolean {
   return insPatch >= reqPatch;
 }
 
-async function displayPackageComparison(
+export async function displayPackageComparison(
   required: { dependencies: { [key: string]: string }, devDependencies: { [key: string]: string } },
   installed: { dependencies: { [key: string]: string }, devDependencies: { [key: string]: string } } | undefined
 ) {
@@ -37,11 +37,11 @@ async function displayPackageComparison(
   const missing = { dependencies: [] as string[], devDependencies: [] as string[] };
   let needsInstall = false;
 
-  console.log('\n📦 Package Requirements:');
+  console.log('🟤 Package Requirements:');
   
   // Check dependencies
   if (Object.keys(required.dependencies).length > 0) {
-    console.log('\nDependencies:');
+    console.log('   Dependencies:');
     for (const [pkg, version] of Object.entries(required.dependencies)) {
       const installedVersion = installed.dependencies[pkg];
       const status = !installedVersion ? 
@@ -50,7 +50,7 @@ async function displayPackageComparison(
           `${colors.green}✓ ${installedVersion}${colors.reset}` :
           `${colors.yellow}⚠ ${installedVersion} (needs ${version})${colors.reset}`;
       
-      console.log(`  ${pkg}@${version} → ${status}`);
+      console.log(`     ${pkg}@${version} → ${status}`);
       
       if (!installedVersion || !compareVersions(version, installedVersion)) {
         missing.dependencies.push(`${pkg}@${version}`);
@@ -61,7 +61,7 @@ async function displayPackageComparison(
 
   // Check devDependencies
   if (Object.keys(required.devDependencies).length > 0) {
-    console.log('\nDev Dependencies:');
+    console.log('    Dev Dependencies:');
     for (const [pkg, version] of Object.entries(required.devDependencies)) {
       const installedVersion = installed.devDependencies[pkg];
       const status = !installedVersion ? 
@@ -70,7 +70,7 @@ async function displayPackageComparison(
           `${colors.green}✓ ${installedVersion}${colors.reset}` :
           `${colors.yellow}⚠ ${installedVersion} (needs ${version})${colors.reset}`;
       
-      console.log(`  ${pkg}@${version} → ${status}`);
+      console.log(`     ${pkg}@${version} → ${status}`);
       
       if (!installedVersion || !compareVersions(version, installedVersion)) {
         missing.devDependencies.push(`${pkg}@${version}`);
@@ -97,7 +97,7 @@ export async function addComponent(component: string) {
 
   try {
     // Make API request
-    console.info(`🚀 Fetching component from ${colors.blue}${BASE_URL}/${framework}/${componentKey}${colors.reset}`);
+    console.info(`🔵 Fetching component from ${colors.blue}${BASE_URL}/${framework}/${componentKey}${colors.reset}`);
     const response = await fetch(`${BASE_URL}/${framework}/${componentKey}`);
 
     if (!response.ok) {
@@ -117,7 +117,7 @@ export async function addComponent(component: string) {
         const normalizedExisting = existingContent.replace(/\s+/g, ' ').trim();
         const normalizedNew = file.content.replace(/\s+/g, ' ').trim();
         if (normalizedExisting === normalizedNew) {
-          console.log(`🟡 Skip ${colors.yellow}${file.targetPath}${colors.reset} Because the file already exists and is the same`);
+            console.log(`🟡 Skip ${colors.yellow}${file.targetPath}${colors.reset} because the file already exists and has the same content`);
           continue;
         } else {
           const { action } = await inquirer.prompt([{
@@ -133,14 +133,14 @@ export async function addComponent(component: string) {
 
           if (action === 'r') {
             fs.writeFileSync(destPath, file.content);
-            console.log(`🟢 Replace ${colors.green}${file.name}${colors.reset}`,'');
+            console.log(`🟢 Replace ${colors.green}${file.targetPath}${colors.reset}`,'');
           } else if (action === 'n') {
             let counter = 1;
             let newDestPath;
             const ext = path.extname(file.name);
             const nameWithoutExt = path.basename(file.name, ext);
 
-            console.log(`🔄 Finding available filename for ${colors.blue}${file.name}${colors.reset}...`);
+            console.log(`⚪ Finding available filename for ${colors.blue}${file.name}${colors.reset}...`);
 
             do {
               newDestPath = path.join(destDir, `${nameWithoutExt}${counter}${ext}`);
@@ -163,14 +163,11 @@ export async function addComponent(component: string) {
 
       // Write file
       fs.writeFileSync(destPath, file.content);
-      console.log(`🟢 Create ${colors.green}${file.name}${colors.reset}`);
+      console.log(`🟢 Create ${colors.green}${file.targetPath}${colors.reset}`);
     }
-    console.log(data);
     
     // Check required packages
-    if (data.packages) {
-      console.log('\n📦 Checking required packages...');
-      
+    if (data.packages) {      
       const installedPackages = await listDependencies();
       const { needsInstall, missing } = await displayPackageComparison(data.packages, installedPackages);
 
@@ -183,26 +180,31 @@ export async function addComponent(component: string) {
         }]);
 
         if (shouldInstall) {
-          if (missing.dependencies.length > 0) {
-            console.log(`\n📦 Installing dependencies...`);
-            execSync(`npm install ${missing.dependencies.join(" ")}`, { stdio: "inherit" });
+          try {
+            if (missing.dependencies.length > 0) {
+              console.log(`🟤 Installing dependencies...`);
+              await execa('npm', ['install', ...missing.dependencies]);
+            }
+            
+            if (missing.devDependencies.length > 0) {
+              console.log(`🟤 Installing dev dependencies...`);
+              await execa('npm', ['install', '-D', ...missing.devDependencies]);
+            }
+            
+            console.log('🟢 Packages installed successfully');
+          } catch (error) {
+            console.error(`${colors.red}🔴 Failed to install packages:${colors.reset}`, error instanceof Error ? error.message : String(error));
+            process.exit(1);
           }
-          
-          if (missing.devDependencies.length > 0) {
-            console.log(`\n📦 Installing dev dependencies...`);
-            execSync(`npm install -D ${missing.devDependencies.join(" ")}`, { stdio: "inherit" });
-          }
-          
-          console.log('✅ Packages installed successfully');
         } else {
           console.log('⚠️ Skipping package installation. Note that the component might not work correctly.');
         }
       } else {
-        console.log('\n✅ All required packages are already installed with compatible versions');
+        console.log('🟢 All required packages are already installed with compatible versions');
       }
     }
 
-    console.log(`✨ Component ${colors.green}${componentKey}${colors.reset} added successfully!`);
+    console.log(`🟢 Component ${colors.green}${componentKey}${colors.reset} added successfully!`);
 
   } catch (error) {
     console.error(`${colors.red}🔴 Error:${colors.reset}`, error instanceof Error ? error.message : String(error));

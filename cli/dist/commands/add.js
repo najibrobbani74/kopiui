@@ -40,7 +40,7 @@ exports.addComponent = addComponent;
 exports.listDependencies = listDependencies;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
-const child_process_1 = require("child_process");
+const execa_1 = require("execa");
 const inquirer_1 = __importDefault(require("inquirer"));
 const component_list_1 = __importStar(require("../settings/component-list"));
 const BASE_URL = "https://kopiui.najibrobbani.site/api/registry"; // adjust as needed
@@ -71,10 +71,10 @@ async function displayPackageComparison(required, installed) {
         return { needsInstall: false, missing: { dependencies: [], devDependencies: [] } };
     const missing = { dependencies: [], devDependencies: [] };
     let needsInstall = false;
-    console.log('\n📦 Package Requirements:');
+    console.log('🟤 Package Requirements:');
     // Check dependencies
     if (Object.keys(required.dependencies).length > 0) {
-        console.log('\nDependencies:');
+        console.log('   Dependencies:');
         for (const [pkg, version] of Object.entries(required.dependencies)) {
             const installedVersion = installed.dependencies[pkg];
             const status = !installedVersion ?
@@ -82,7 +82,7 @@ async function displayPackageComparison(required, installed) {
                 compareVersions(version, installedVersion) ?
                     `${colors.green}✓ ${installedVersion}${colors.reset}` :
                     `${colors.yellow}⚠ ${installedVersion} (needs ${version})${colors.reset}`;
-            console.log(`  ${pkg}@${version} → ${status}`);
+            console.log(`     ${pkg}@${version} → ${status}`);
             if (!installedVersion || !compareVersions(version, installedVersion)) {
                 missing.dependencies.push(`${pkg}@${version}`);
                 needsInstall = true;
@@ -91,7 +91,7 @@ async function displayPackageComparison(required, installed) {
     }
     // Check devDependencies
     if (Object.keys(required.devDependencies).length > 0) {
-        console.log('\nDev Dependencies:');
+        console.log('    Dev Dependencies:');
         for (const [pkg, version] of Object.entries(required.devDependencies)) {
             const installedVersion = installed.devDependencies[pkg];
             const status = !installedVersion ?
@@ -99,7 +99,7 @@ async function displayPackageComparison(required, installed) {
                 compareVersions(version, installedVersion) ?
                     `${colors.green}✓ ${installedVersion}${colors.reset}` :
                     `${colors.yellow}⚠ ${installedVersion} (needs ${version})${colors.reset}`;
-            console.log(`  ${pkg}@${version} → ${status}`);
+            console.log(`     ${pkg}@${version} → ${status}`);
             if (!installedVersion || !compareVersions(version, installedVersion)) {
                 missing.devDependencies.push(`${pkg}@${version}`);
                 needsInstall = true;
@@ -121,7 +121,7 @@ async function addComponent(component) {
     }
     try {
         // Make API request
-        console.info(`🚀 Fetching component from ${colors.blue}${BASE_URL}/${framework}/${componentKey}${colors.reset}`);
+        console.info(`🔵 Fetching component from ${colors.blue}${BASE_URL}/${framework}/${componentKey}${colors.reset}`);
         const response = await fetch(`${BASE_URL}/${framework}/${componentKey}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -138,7 +138,7 @@ async function addComponent(component) {
                 const normalizedExisting = existingContent.replace(/\s+/g, ' ').trim();
                 const normalizedNew = file.content.replace(/\s+/g, ' ').trim();
                 if (normalizedExisting === normalizedNew) {
-                    console.log(`🟡 Skip ${colors.yellow}${file.targetPath}${colors.reset} Because the file already exists and is the same`);
+                    console.log(`🟡 Skip ${colors.yellow}${file.targetPath}${colors.reset} because the file already exists and has the same content`);
                     continue;
                 }
                 else {
@@ -154,14 +154,14 @@ async function addComponent(component) {
                         }]);
                     if (action === 'r') {
                         fs_1.default.writeFileSync(destPath, file.content);
-                        console.log(`🟢 Replace ${colors.green}${file.name}${colors.reset}`, '');
+                        console.log(`🟢 Replace ${colors.green}${file.targetPath}${colors.reset}`, '');
                     }
                     else if (action === 'n') {
                         let counter = 1;
                         let newDestPath;
                         const ext = path_1.default.extname(file.name);
                         const nameWithoutExt = path_1.default.basename(file.name, ext);
-                        console.log(`🔄 Finding available filename for ${colors.blue}${file.name}${colors.reset}...`);
+                        console.log(`⚪ Finding available filename for ${colors.blue}${file.name}${colors.reset}...`);
                         do {
                             newDestPath = path_1.default.join(destDir, `${nameWithoutExt}${counter}${ext}`);
                             counter++;
@@ -181,12 +181,10 @@ async function addComponent(component) {
             }
             // Write file
             fs_1.default.writeFileSync(destPath, file.content);
-            console.log(`🟢 Create ${colors.green}${file.name}${colors.reset}`);
+            console.log(`🟢 Create ${colors.green}${file.targetPath}${colors.reset}`);
         }
-        console.log(data);
         // Check required packages
         if (data.packages) {
-            console.log('\n📦 Checking required packages...');
             const installedPackages = await listDependencies();
             const { needsInstall, missing } = await displayPackageComparison(data.packages, installedPackages);
             if (needsInstall) {
@@ -197,25 +195,31 @@ async function addComponent(component) {
                         default: true
                     }]);
                 if (shouldInstall) {
-                    if (missing.dependencies.length > 0) {
-                        console.log(`\n📦 Installing dependencies...`);
-                        (0, child_process_1.execSync)(`npm install ${missing.dependencies.join(" ")}`, { stdio: "inherit" });
+                    try {
+                        if (missing.dependencies.length > 0) {
+                            console.log(`🟤 Installing dependencies...`);
+                            await (0, execa_1.execa)('npm', ['install', ...missing.dependencies]);
+                        }
+                        if (missing.devDependencies.length > 0) {
+                            console.log(`🟤 Installing dev dependencies...`);
+                            await (0, execa_1.execa)('npm', ['install', '-D', ...missing.devDependencies]);
+                        }
+                        console.log('🟢 Packages installed successfully');
                     }
-                    if (missing.devDependencies.length > 0) {
-                        console.log(`\n📦 Installing dev dependencies...`);
-                        (0, child_process_1.execSync)(`npm install -D ${missing.devDependencies.join(" ")}`, { stdio: "inherit" });
+                    catch (error) {
+                        console.error(`${colors.red}🔴 Failed to install packages:${colors.reset}`, error instanceof Error ? error.message : String(error));
+                        process.exit(1);
                     }
-                    console.log('✅ Packages installed successfully');
                 }
                 else {
                     console.log('⚠️ Skipping package installation. Note that the component might not work correctly.');
                 }
             }
             else {
-                console.log('\n✅ All required packages are already installed with compatible versions');
+                console.log('🟢 All required packages are already installed with compatible versions');
             }
         }
-        console.log(`✨ Component ${colors.green}${componentKey}${colors.reset} added successfully!`);
+        console.log(`🟢 Component ${colors.green}${componentKey}${colors.reset} added successfully!`);
     }
     catch (error) {
         console.error(`${colors.red}🔴 Error:${colors.reset}`, error instanceof Error ? error.message : String(error));

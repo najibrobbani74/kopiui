@@ -34,6 +34,12 @@ export async function GET(request: NextRequest, { params }: Props) {
             error: "Component not found"
         }, { status: 404 });
     }
+
+    if (!FrameworkListType.includes(framework as typeof FrameworkListType[number])) {
+        return NextResponse.json({
+            error: "Framework not found"
+        }, { status: 404 });
+    }
     const components = componentList[component].sourceFiles[framework].filter((item) => item.title.toLowerCase() !== "usage"); 
 
     const files: ResponseFileType[] = await Promise.all(components.map(async (file) => {

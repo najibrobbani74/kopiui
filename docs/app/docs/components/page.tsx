@@ -1,3 +1,5 @@
-import AccordionComponentPage from "./accordion/page";
+import ComponentPage from "./[component]/page";
 
-export default AccordionComponentPage
+export default async function Page() {
+  return ComponentPage({ params: Promise.resolve({ component: "accordion" }) });
+}
