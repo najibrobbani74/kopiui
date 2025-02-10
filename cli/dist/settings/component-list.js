@@ -1,118 +1,87 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FrameworkListType = void 0;
+exports.initSetup = exports.FrameworkListType = void 0;
 exports.FrameworkListType = ["nextjs-ts"];
+function keyToTitle(key) {
+    return key.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+function keyToComponentName(key) {
+    return key.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join('');
+}
+const getComponentType = (name) => {
+    const componentName = keyToComponentName(name);
+    const title = keyToTitle(name);
+    return {
+        name: title,
+        key: name,
+        docsPath: `/docs/components/${name}`,
+        previewFilePath: `./components/previews/${componentName}Preview.tsx`,
+        sourceFiles: {
+            "nextjs-ts": (() => {
+                const sourceFiles = [
+                    {
+                        name: `${componentName}Preview.tsx`,
+                        title: "Usage",
+                        sourcePath: `${process.cwd()}/components/previews/${componentName}Preview.tsx`,
+                        targetPath: `/components/previews/${componentName}Preview.tsx`
+                    },
+                    {
+                        name: `${componentName}.tsx`,
+                        title: "TSX",
+                        sourcePath: `${process.cwd()}/components/ui/${name}/${componentName}.tsx`,
+                        targetPath: `/components/ui/${name}/${componentName}.tsx`,
+                    },
+                    {
+                        name: "utils.ts",
+                        title: "Utils",
+                        sourcePath: process.cwd() + "/lib/utils.ts",
+                        targetPath: "/lib/utils.ts",
+                    }
+                ];
+                return sourceFiles;
+            })(),
+        },
+        packages: {
+            "nextjs-ts": {
+                dependencies: (() => {
+                    const dependencies = {
+                        "clsx": "^2.1.1",
+                        "tailwind-merge": "^3.0.1"
+                    };
+                    return dependencies;
+                })(),
+                devDependencies: {}
+            }
+        }
+    };
+};
 const componentList = {
-    "accordion": {
-        name: "Accordion",
-        key: "accordion",
-        docsPath: "/docs/components/accordion",
-        previewFilePath: "./components/previews/AccordionPreview.tsx",
-        sourceFiles: {
-            "nextjs-ts": [
-                {
-                    name: "AccordionPreview.tsx",
-                    title: "Usage",
-                    sourcePath: process.cwd() + "/components/previews/AccordionPreview.tsx",
-                    targetPath: "/components/previews/AccordionPreview.tsx"
-                },
-                {
-                    name: "Accordion.tsx",
-                    title: "TSX",
-                    sourcePath: process.cwd() + "/components/ui/accordion/Accordion.tsx",
-                    targetPath: "/components/ui/accordion/Accordion.tsx",
-                },
-                {
-                    name: "utils.ts",
-                    title: "Utils",
-                    sourcePath: process.cwd() + "/lib/utils.ts",
-                    targetPath: "/lib/utils.ts",
-                }
-            ],
-        },
-        packages: {
-            "nextjs-ts": {
-                dependencies: {
-                    "clsx": "^2.1.1",
-                    "tailwind-merge": "^3.0.1"
-                },
-                devDependencies: {}
+    "accordion": getComponentType("accordion"),
+    "alert": getComponentType("alert"),
+    "alert-dialog": getComponentType("alert-dialog"),
+};
+exports.initSetup = {
+    sourceFiles: {
+        "nextjs-ts": [
+            {
+                name: "globals.css",
+                title: "CSS",
+                sourcePath: process.cwd() + "/app/globals.css",
+                targetPath: "/app/globals.css",
+            },
+            {
+                name: "tailwind.config.ts",
+                title: "Tailwind Config",
+                sourcePath: process.cwd() + "/tailwind.config.ts",
+                targetPath: "/tailwind.config.ts",
             }
-        }
+        ]
     },
-    "alert": {
-        name: "Alert",
-        key: "alert",
-        docsPath: "/docs/components/alert",
-        previewFilePath: "./components/previews/AlertPreview.tsx",
-        sourceFiles: {
-            "nextjs-ts": [
-                {
-                    name: "AlertPreview.tsx",
-                    title: "Usage",
-                    sourcePath: process.cwd() + "/components/previews/AlertPreview.tsx",
-                    targetPath: "/components/previews/AlertPreview.tsx"
-                },
-                {
-                    name: "Alert.tsx",
-                    title: "TSX",
-                    sourcePath: process.cwd() + "/components/ui/alert/Alert.tsx",
-                    targetPath: "/components/ui/alert/Alert.tsx",
-                },
-                {
-                    name: "utils.ts",
-                    title: "Utils",
-                    sourcePath: process.cwd() + "/lib/utils.ts",
-                    targetPath: "/lib/utils.ts",
-                }
-            ],
-        },
-        packages: {
-            "nextjs-ts": {
-                dependencies: {
-                    "clsx": "^2.1.1",
-                    "tailwind-merge": "^3.0.1"
-                },
-                devDependencies: {}
-            }
+    packages: {
+        "nextjs-ts": {
+            dependencies: {},
+            devDependencies: {}
         }
-    },
-    "alert-dialog": {
-        name: "Alert Dialog",
-        key: "alert-dialog",
-        docsPath: "/docs/components/alert-dialog",
-        previewFilePath: "./components/previews/AlertDialogPreview.tsx",
-        sourceFiles: {
-            "nextjs-ts": [
-                {
-                    name: "AlertDialogPreview.tsx",
-                    title: "Usage",
-                    sourcePath: process.cwd() + "/components/previews/AlertDialogPreview.tsx",
-                    targetPath: "/components/previews/AlertDialogPreview.tsx"
-                },
-                {
-                    name: "AlertDialog.tsx",
-                    title: "TSX",
-                    sourcePath: process.cwd() + "/components/ui/alert-dialog/AlertDialog.tsx",
-                    targetPath: "/components/ui/alert-dialog/AlertDialog.tsx",
-                },
-                {
-                    name: "utils.ts",
-                    title: "Utils",
-                    sourcePath: process.cwd() + "/lib/utils.ts",
-                    targetPath: "/lib/utils.ts",
-                }
-            ],
-        },
-        packages: {
-            "nextjs-ts": {
-                dependencies: {
-                    "clsx": "^2.1.1",
-                    "tailwind-merge": "^3.0.1"
-                },
-                devDependencies: {}
-            }
-        }
-    },
+    }
 };
 exports.default = componentList;

@@ -113,19 +113,24 @@ export const initSetup: {
 
 } = {
     sourceFiles: {
-        "nextjs-ts": [{
-            name: "globals.css",
-            title: "CSS",
-            sourcePath: process.cwd() + "/app/globals.css",
-            targetPath: "/app/globals.css",
-        }]
+        "nextjs-ts": [
+            {
+                name: "globals.css",
+                title: "CSS",
+                sourcePath: process.cwd() + "/app/globals.css",
+                targetPath: "/app/globals.css",
+            },
+            {
+                name: "tailwind.config.ts",
+                title: "Tailwind Config",
+                sourcePath: process.cwd() + "/tailwind.config.ts",
+                targetPath: "/tailwind.config.ts",
+            }
+        ]
     },
     packages: {
         "nextjs-ts": {
-            dependencies: {
-                "clsx": "^2.1.1",
-                "tailwind-merge": "^3.0.1"
-            },
+            dependencies: {},
             devDependencies: {}
         }
     }
