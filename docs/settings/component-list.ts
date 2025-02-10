@@ -130,7 +130,9 @@ export const initSetup: {
     },
     packages: {
         "nextjs-ts": {
-            dependencies: {},
+            dependencies: {
+                "tailwindcss-animate": "^1.0.7"
+            },
             devDependencies: {
                 "tailwindcss": "^3.4.1",
             }

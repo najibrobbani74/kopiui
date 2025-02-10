@@ -1,17 +1,17 @@
 1:"$Sreact.fragment"
 2:I[5244,[],""]
 3:I[3866,[],""]
-4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"StaticNavbar"]
-5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarHeader"]
-6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SidebarTriggerButton"]
-7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],""]
-8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarMenus"]
-9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarMenu"]
-a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"NavbarLink"]
-b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SearchModalTrigger"]
-c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"SearchModal"]
-d:I[4402,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"default"]
-e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-13d0f85e97b596f3.js"],"default"]
+4:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"StaticNavbar"]
+5:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"NavbarHeader"]
+6:I[9426,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"SidebarTriggerButton"]
+7:I[8173,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],""]
+8:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"NavbarMenus"]
+9:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"NavbarMenu"]
+a:I[9200,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"NavbarLink"]
+b:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"SearchModalTrigger"]
+c:I[2743,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"SearchModal"]
+d:I[4402,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"default"]
+e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173-c14e1b867fc87934.js","499","static/chunks/app/docs/layout-f758e9dd306e0e19.js"],"default"]
 10:I[6213,[],"OutletBoundary"]
 12:I[6213,[],"MetadataBoundary"]
 14:I[6213,[],"ViewportBoundary"]
@@ -19,7 +19,7 @@ e:I[2040,["181","static/chunks/181-a11b75422f6c6061.js","173","static/chunks/173
 :HL["/_next/static/media/569ce4b8f30dc480-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/532b78aef3f792ce.css","style"]
-0:{"P":null,"b":"vP9uGREo4npakaZLXWObr","p":"","c":["","docs","components"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/532b78aef3f792ce.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{"defaultTheme":"dark"}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":"$L11"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","E7O3wPBvcnJ3fz7aVWqZQ",{"children":[["$","$L12",null,{"children":"$L13"}],["$","$L14",null,{"children":"$L15"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"I98JV3ZjUEMyvcMEeDHaf","p":"","c":["","docs","components"],"i":false,"f":[[["",{"children":["docs",{"children":["components",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/532b78aef3f792ce.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dark","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}]]}],["$","body",null,{"className":"__variable_4d318d __variable_ea5f4b antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}],{"children":["docs",["$","$1","c",{"children":[null,[["$","$L4",null,{"children":[["$","$L5",null,{"children":[["$","$L6",null,{"triggerKey":"toggle","className":"lg:hidden"}],["$","$L7",null,{"href":"/","className":"text-3xl text-foreground mx-5","style":{"fontFamily":"Urbanist"},"children":"kopiui"}]]}],["$","$L8",null,{"children":[["$","$L9",null,{"children":["$","$La",null,{"href":"/docs","children":"Docs"}]}],["$","$L9",null,{"className":"mr-auto","children":["$","$La",null,{"href":"/docs/components","children":"Components"}]}],["$","$L9",null,{"children":[["$","$Lb",null,{"triggerKey":"search-modal"}],["$","$Lc",null,{"data":[{"title":"Accordion","link":"/docs/components/accordion"},{"title":"Alert","link":"/docs/components/alert"},{"title":"Alert Dialog","link":"/docs/components/alert-dialog"}],"triggerKey":"search-modal"}]]}],["$","$L9",null,{"children":["$","$Ld",null,{"defaultTheme":"dark"}]}]]}]]}],["$","$Le",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]]]}],{"children":["components",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","segmentPath":["children","docs","children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":"$L11"}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","rGp5kNehvYkmUH0GnL3rR",{"children":[["$","$L12",null,{"children":"$L13"}],["$","$L14",null,{"children":"$L15"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
 17:I[9214,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","769","static/chunks/app/docs/components/page-6c9833d31a9589d0.js"],"PreloadChunks"]
 19:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","769","static/chunks/app/docs/components/page-6c9833d31a9589d0.js"],"Tabs"]
 1a:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","769","static/chunks/app/docs/components/page-6c9833d31a9589d0.js"],"TabsList"]
@@ -36,7 +36,37 @@ f:[["$","h1",null,{"ref":"$undefined","children":"Accordion","className":"text-3
 23:I[6719,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","769","static/chunks/app/docs/components/page-6c9833d31a9589d0.js"],"TabsContent"]
 24:I[9389,["181","static/chunks/181-a11b75422f6c6061.js","905","static/chunks/905-d4cb29f959152847.js","651","static/chunks/651-b2ae9b6c1a86084d.js","769","static/chunks/app/docs/components/page-6c9833d31a9589d0.js"],"default"]
 1e:["$","$L23","2",{"triggerKey":"utils","children":["$","$L24",null,{"language":"ts","maxHeight":"60rem","code":"// @/lib/utils.ts\n\nimport { clsx, type ClassValue } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs))\n}\n"}]}]
-25:Te4c,// @/components/ui/accordion/Accordion.tsx
+25:T781,import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion/Accordion"
+
+const AccordionPreview = () => {
+    return (
+        <div className="bg-background max-w-[40rem] rounded-lg">
+        <Accordion>
+            <AccordionItem defaultOpen={true}>
+                <AccordionTrigger>JavaScript</AccordionTrigger>
+                <AccordionContent>
+                    JavaScript is a versatile programming language that is commonly used for web development. It allows developers to create dynamic and interactive web pages by manipulating the DOM and handling events. JavaScript can be used on both the client-side and server-side, making it a powerful tool for full-stack development.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionTrigger>React</AccordionTrigger>
+                <AccordionContent>
+                    React is a JavaScript library for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes. React components are the building blocks of a React application, and they can be composed to create complex UIs.
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionTrigger>Tailwind CSS</AccordionTrigger>
+                <AccordionContent>
+                    Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing CSS. It allows developers to apply styles directly in the HTML, making it easy to create responsive and consistent designs. Tailwinds approach encourages a more streamlined and maintainable styling process.
+                </AccordionContent>
+            </AccordionItem>
+        </Accordion>
+        </div>
+    )
+}
+
+export default AccordionPreview1c:["$","$L23","0",{"triggerKey":"usage","children":["$","$L24",null,{"language":"tsx","maxHeight":"60rem","code":"$25"}]}]
+26:Te4c,// @/components/ui/accordion/Accordion.tsx
 
 "use client"
 
@@ -132,34 +162,4 @@ const IsOpenProvider: FC<{ children: ReactNode, defaultOpen?: boolean }> = ({ ch
 
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
 
-1d:["$","$L23","1",{"triggerKey":"tsx","children":["$","$L24",null,{"language":"tsx","maxHeight":"60rem","code":"$25"}]}]
-26:T781,import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion/Accordion"
-
-const AccordionPreview = () => {
-    return (
-        <div className="bg-background max-w-[40rem] rounded-lg">
-        <Accordion>
-            <AccordionItem defaultOpen={true}>
-                <AccordionTrigger>JavaScript</AccordionTrigger>
-                <AccordionContent>
-                    JavaScript is a versatile programming language that is commonly used for web development. It allows developers to create dynamic and interactive web pages by manipulating the DOM and handling events. JavaScript can be used on both the client-side and server-side, making it a powerful tool for full-stack development.
-                </AccordionContent>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionTrigger>React</AccordionTrigger>
-                <AccordionContent>
-                    React is a JavaScript library for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes. React components are the building blocks of a React application, and they can be composed to create complex UIs.
-                </AccordionContent>
-            </AccordionItem>
-            <AccordionItem>
-                <AccordionTrigger>Tailwind CSS</AccordionTrigger>
-                <AccordionContent>
-                    Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing CSS. It allows developers to apply styles directly in the HTML, making it easy to create responsive and consistent designs. Tailwinds approach encourages a more streamlined and maintainable styling process.
-                </AccordionContent>
-            </AccordionItem>
-        </Accordion>
-        </div>
-    )
-}
-
-export default AccordionPreview1c:["$","$L23","0",{"triggerKey":"usage","children":["$","$L24",null,{"language":"tsx","maxHeight":"60rem","code":"$26"}]}]
+1d:["$","$L23","1",{"triggerKey":"tsx","children":["$","$L24",null,{"language":"tsx","maxHeight":"60rem","code":"$26"}]}]
